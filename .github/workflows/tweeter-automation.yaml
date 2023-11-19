@@ -24,7 +24,7 @@ jobs:
           go-version: ${{ matrix.go-version }}
       - uses: actions/checkout@v2
       - name: lint with golangci-lint
-        uses: golangci/golangci-lint-action@v2
+        uses: golangci/golangci-lint-action@v3
       - name: run go test
         run: go test ./...
   test-action:
